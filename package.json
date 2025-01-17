@@ -1,0 +1,37 @@
+{
+  "name": "ecommerceservice",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "nodemon src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CGNO1210/EcommerceService.git"
+  },
+  "keywords": [
+    "shop",
+    "ecommerce"
+  ],
+  "author": "huungocnguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CGNO1210/EcommerceService/issues"
+  },
+  "homepage": "https://github.com/CGNO1210/EcommerceService#readme",
+  "dependencies": {
+    "async-exit-hook": "^2.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "joi": "^17.13.3",
+    "mongodb": "^6.12.0",
+    "nodemon": "^3.1.9"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.7"
+  }
+}
