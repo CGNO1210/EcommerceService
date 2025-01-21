@@ -1,16 +1,13 @@
 //imp db
 
-const createUser = (userName, password) => {
-    return new Promise(async (resolve, reject) => {
-        try {
-            resolve({
-                errCode: 0,
-                message: 'User created successfully',
-            })
-        } catch (error) {
-            reject(error)
-        }
-    })
+import ApiError from "../utils/ApiError.js"
+
+const createUser = async (userName, password) => {
+    try {
+        throw new ApiError(501, 'Not implemented');
+    } catch (error) {
+        throw error
+    }
 }
 
 export default {

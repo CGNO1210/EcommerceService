@@ -15,10 +15,11 @@ const createUser = async (req, res, next) => {
         console.log(req.cookies);
         console.log(req.jwtDecoded);
 
-        throw new ApiError(StatusCodes.BAD_GATEWAY,"test error")
-        // res.status(200).json({
-        //     message: "Post from controller: api create new user"
-        // })
+        const message = await userService.createUser() 
+        // throw new ApiError(StatusCodes.BAD_GATEWAY,"test error")
+        res.status(200).json({
+            message: "Post from controller: api create new user"
+        })
     } catch (error) {
         next(error)
     }
